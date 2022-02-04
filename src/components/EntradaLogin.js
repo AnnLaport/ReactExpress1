@@ -1,11 +1,11 @@
 import React from 'react';
 
-function EntradaLogin(props){
+function EntradaLogin({identifier, tipo, onChange, value}){
 
     return(
         <div>
-            <label htmlFor={props.id}>{props.id}: </label>
-            <input text={props.type} id={props.id} />
+            <label htmlFor={identifier}>{tipo}: </label>
+            <input type={tipo} id={identifier} onChange={onChange} value={value} />
         </div>
     )
 }
